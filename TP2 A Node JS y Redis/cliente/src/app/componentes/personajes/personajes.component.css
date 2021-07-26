@@ -1,0 +1,64 @@
+.eliminar {
+    color: #e03832;
+    background-color: rgb(41, 41, 33);
+    border-color: black;
+}
+
+.eliminar:hover,
+.eliminar:focus,
+.eliminar:active,
+.eliminar.active,
+.open>.dropdown-toggle.eliminar {
+    color: black;
+    background-color: #e03832;
+    border-color: black;
+}
+
+.btn-outline-success {
+    color: #51a50c;
+    background-color: rgb(41, 41, 33);
+    border-color: black;
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:focus,
+.btn-outline-success:active,
+.btn-outline-success.active,
+.open>.dropdown-toggle.btn-outline-success {
+    color: black;
+    background-color: #51a50c;
+    border-color: black;
+}
+
+input:not(:placeholder-shown) {
+    background-color: #2b2c2a!important;
+    border: #51a50c transparent;
+    outline: none;
+    color: rgb(209, 175, 64);
+}
+
+input,
+select,
+:placeholder-shown {
+    background-color: black!important;
+    border: rgb(170, 131, 25)solid;
+    border-style: ridge;
+    box-shadow: rgb(170, 131, 25);
+    outline: none;
+}
+
+input:focus {
+    border: rgb(170, 131, 25);
+    border-style: solid;
+    box-shadow: rgb(170, 131, 25);
+}
+
+.container {
+    background-color: black;
+    color: rgb(214, 191, 58);
+}
+
+.btn-warning {
+    background-color: rgb(214, 166, 34);
+    border: rgb(170, 131, 25);
+}

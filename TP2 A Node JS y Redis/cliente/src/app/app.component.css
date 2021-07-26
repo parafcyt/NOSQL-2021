@@ -1,0 +1,4 @@
+.container-fluid {
+    background: rgb(195, 127, 34);
+    background: linear-gradient(0deg, rgba(195, 127, 34, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}

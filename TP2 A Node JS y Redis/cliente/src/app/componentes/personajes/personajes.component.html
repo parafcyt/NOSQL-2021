@@ -1,0 +1,27 @@
+<div class="container">
+    <!-- <div class="list-group"> -->
+    <br>
+    <h4 class="bd-title" id="content">Episodio {{episodio}}</h4>
+    <br>
+    <div class="row" *ngFor="let personaje of personajes">
+        <ul class="col-3">
+            <li class="list-group list-group-flush">{{personaje | titlecase}}</li>
+        </ul>
+        <div class="col-4">
+            <button type="button" class="btn btn-outline-warning eliminar" (click)=eliminarPersonajeF(personaje)>Eliminar</button>
+        </div>
+    </div>
+    <br><br><br>
+    <div class=" row ">
+        <div class="col-3 ">
+            <input #textbox type="text" class="form-control nuevoPersonaje" [(ngModel)]="nombrePersonaje " (keyup.enter)="agregarPersonajesF()" placeholder="Agregue un personaje ">
+        </div>
+        <div class="col-4 ">
+            <button class="btn btn-outline-success " type="button " (click)="agregarPersonajesF() ">Guardar</button>
+        </div>
+    </div>
+    <br><br><br>
+    <button type="button" class="btn btn-warning" routerLink="/">Volver</button>
+
+
+</div>

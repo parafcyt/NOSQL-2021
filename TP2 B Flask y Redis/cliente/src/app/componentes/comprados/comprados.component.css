@@ -1,0 +1,27 @@
+.centrado {
+    width: 50rem;
+    margin: 5%;
+}
+
+.filas {
+    text-align: center;
+}
+
+.cabecera {
+    text-align: center;
+}
+
+.reservar {
+    color: rgb(182, 97, 182);
+    border-color: rgb(182, 97, 182);
+}
+
+.reservar:hover,
+.reservar:focus,
+.reservar:active,
+.reservar.active,
+.open>.dropdown-toggle.reservar {
+    color: white;
+    background-color: rgb(182, 97, 182);
+    border-color: white;
+}

@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #a06baa;">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/">
+            <img src="../../../assets/ticket.png" alt="" width="40" height="40" class="d-inline-block align-text-center "> Tickets
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " routerLink="/disponibles" routerLinkActive="active">Disponibles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " routerLink="/reservados" routerLinkActive="active">Reservados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " routerLink="/comprados" routerLinkActive="active">Comprados</a>
+                </li>
+
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" name="cantTickets" [(ngModel)]="cantTickets" placeholder="Cantidad de Tickets">
+                <button class="btn btn-outline-warning" (click)="inicializarF()">Cargar</button>
+            </form>
+        </div>
+    </div>
+</nav>

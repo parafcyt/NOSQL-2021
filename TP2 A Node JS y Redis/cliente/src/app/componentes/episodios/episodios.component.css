@@ -1,0 +1,24 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-color: rgb(122, 90, 21);
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h5 {
+    color: #d8a707;
+}
+
+button {
+    color: #a5750c;
+    background-color: rgb(41, 41, 33);
+    border-color: black;
+}
