@@ -19,7 +19,7 @@ export class AppComponent implements OnInit{
   ubicacionActual:Ubicacion;
 
   //si elegi en el radioButton la UADER
-  ubicacionUader :boolean =true;
+  ubicacionUader: boolean =true;
 
   //para recorrer por rubro
   rubros: string[] = [
@@ -32,7 +32,7 @@ export class AppComponent implements OnInit{
 
   latitud:number;
   longitud:number;
-  radio:number = 2;
+  radio:number = 1;
   negociosEnElRadio=[];
 
   constructor(private servicioService:ServicioService){}
