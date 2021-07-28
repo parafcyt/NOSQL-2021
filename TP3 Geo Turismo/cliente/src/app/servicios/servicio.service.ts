@@ -23,5 +23,6 @@ export class ServicioService {
     //necesito pasar de parametro: ubicacion y un negocio de un rubro, por eso hace peticion POST
     return this.httpCliente.post<string[]>(this.url+'dist-a-negocio',datos);    
   }
+  
 
 }

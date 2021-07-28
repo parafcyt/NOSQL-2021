@@ -60,6 +60,16 @@ export class AppComponent implements OnInit{
     this.porRubroEnRadioF()
   }
 
+  buscarNegocios(){
+    if (this.ubicacionUader) {
+      this.elegiUader()
+      
+    } else {
+      this.elegiOtro()
+      
+    }
+  }
+
   porRubroEnRadioF(){
     this.negociosEnElRadio=[];
 
@@ -96,6 +106,33 @@ export class AppComponent implements OnInit{
       
     });
     console.log(this.negociosEnElRadio);
+  }
+
+  distANegocioF(datos:any){
+    //Cargo los datos del negocio elegido
+    const negocioElegido: any = {
+      latitud: this.ubicacionActual.latitud,
+      longitud: this.ubicacionActual.longitud,
+      rubro: datos.rubro,
+      negocio: datos.nombre
+    }
+
+    //llamo al servicio
+    this.servicioService.distANegocioS(negocioElegido).subscribe(res=>{
+      let distancia=Number(res);
+      let metros=(distancia*1000).toFixed(2);
+
+      console.log(res);
+      
+
+      Swal.fire({
+        icon: 'info',
+        title: `${distancia} Km/ ${metros} metros`,
+        text: `Hasta ${negocioElegido.negocio}`,
+        confirmButtonText: 'Aceptar'
+      });
+    });
+
   }
 
 

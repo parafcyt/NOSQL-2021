@@ -12,9 +12,13 @@
     font-weight: normal;
 }
 
-.centrado {
-    width: 50rem;
-    margin: 5%;
+.distancia {
+    background-color: #fd7c7c;
+    color: black;
+}
+
+.buscar {
+    background-color: #668148;
 }
 
 

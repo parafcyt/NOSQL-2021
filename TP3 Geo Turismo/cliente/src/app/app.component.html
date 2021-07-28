@@ -19,7 +19,7 @@
         <div class="row">
             <div class="col-md-auto">
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input class="custom-control-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <input (change)="ubicacionUader=true" class="custom-control-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                     <label class="custom-control-label" for="flexRadioDefault1">
                   UADER Fcyt
                 </label>
@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-md-auto">
                         <div class="custom-control custom-radio custom-control-inline ">
-                            <input class="custom-control-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <input (change)="ubicacionUader=false" class="custom-control-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                             <label class="custom-control-label" for="flexRadioDefault2">
                   Otro
                   </label>
@@ -37,12 +37,12 @@
                     </div>
                     <div class="col-md-auto">
                         <div class="input-group input-group-sm mb-3">
-                            <input name="latitud" type="text" class="form-control" placeholder="Latitud" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="latitud">
+                            <input name="latitud" [disabled]="ubicacionUader" type="text" class="form-control" placeholder="Latitud" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="latitud">
                         </div>
                     </div>
                     <div class="col-md-auto">
                         <div class="input-group input-group-sm mb-3">
-                            <input name="latitud" type="text" class="form-control" placeholder="Longitud" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="longitud">
+                            <input name="longitud" [disabled]="ubicacionUader" type="text" class="form-control" placeholder="Longitud" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="longitud">
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
             </div>
             <div class="col-md-auto">
 
-                <button type="button" class="btn btn-success btn-sm">Buscar</button>
+                <button type="button" class="btn btn-success btn-sm buscar" (click)="buscarNegocios()">Buscar</button>
 
             </div>
         </div>
@@ -71,29 +71,29 @@
     </form>
 
     <div class="container">
-        <div class="centrado">
-            <table class="table table-warning table-striped ">
-                <thead>
-                    <tr class="cabecera">
-                        <th scope="col">#</th>
-                        <th scope="col">Negocio</th>
-                        <th scope="col">Rubro</th>
-                        <th scope="col">Accion</th>
-                    </tr>
-                </thead>
-                <!-- <tbody>
-                    <tr *ngFor="let ticket of ticketsComprados" class="filas">
-                        <th scope="row">{{ticket[0]}}</th>
-                        <td>{{ticket[1]}}</td>
-                        <td>{{ticket[1]}}</td>
-                        <td>
-                            <button type="button" class="btn btn-outline-secondary reservar" (click)="comprarTicketF(ticket[0])">Comprar</button>
-                        </td>
-                    </tr>
+        <!-- <div class="centrado"> -->
+        <table class="table table-danger table-striped ">
+            <thead>
+                <tr class="cabecera">
+                    <th scope="col">#</th>
+                    <th scope="col">Negocio</th>
+                    <th scope="col">Rubro</th>
+                    <th scope="col">Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let negocio of negociosEnElRadio; let i=index" class="filas">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{negocio.nombre}}</td>
+                    <td>{{negocio.rubro}}</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-secondary distancia" (click)="distANegocioF(negocio)">Distancia</button>
+                    </td>
+                </tr>
 
-                </tbody> -->
-            </table>
-        </div>
+            </tbody>
+        </table>
+        <!-- </div> -->
 
     </div>
 
