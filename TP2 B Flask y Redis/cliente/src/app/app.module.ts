@@ -10,8 +10,9 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { ReservadosComponent } from './componentes/reservados/reservados.component';
 import { CompradosComponent } from './componentes/comprados/comprados.component';
 
-import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
+import { ServicioService } from "./servicios/servicio.service";
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import { FormsModule } from "@angular/forms";
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ServicioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

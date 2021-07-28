@@ -1,0 +1,34 @@
+.radio {
+    text-align: center;
+}
+
+.origen {
+    background-color: #fdd8d8d3;
+    margin-top: 15px;
+    width: fit-content;
+}
+
+.radio {
+    font-weight: normal;
+}
+
+.centrado {
+    width: 50rem;
+    margin: 5%;
+}
+
+
+/* .custom-control-input:checked~.custom-control-label::before {
+    color: #ffff;
+    border-color: #7B1FA2;
+    background-color: rgb(230, 79, 184);
+} */
+
+
+/* .custom-control-input,
+:checked,
+.custom-control-label,
+::before {
+    color: #ffff;
+    border-color: #218d4e;
+} */

@@ -1,15 +1,18 @@
-web:
-    build: ./
-    command: sh -c 'npm install && node src/server.js'
-    ports: 
-      - '3000:3000'
-    volumes:
-      - ./api:/api
-    links:
-      - "db:redistp3"
-  
-  db:
-    image: redis
-    ports:
-      - "6378:6379"
-  
+version: '3'
+
+services:
+    web:
+        build: ./
+        command: sh -c 'npm install && node src/servidor.js'
+        ports: 
+          - '3000:3000'
+        volumes:
+          - ./api:/api
+        links:
+          - "db:redistp3"
+      
+    db:
+        image: redis
+        ports:
+          - "6378:6379"
+      

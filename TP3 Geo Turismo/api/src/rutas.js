@@ -11,4 +11,4 @@ enrutador.post('/por-rubro-en-radio', controladores.porRubroEnRadio);
 enrutador.post('/dist-a-negocio', controladores.distANegocio);
 
 
-module.exports = router;
+module.exports = enrutador;

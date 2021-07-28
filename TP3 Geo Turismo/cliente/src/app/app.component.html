@@ -1,0 +1,102 @@
+<nav class="navbar navbar-light" style="background-color: #cef0c5;">
+    <div class=" container-fluid ">
+        <a class="navbar-brand " href="# ">
+            <img src="../assets/two-points.png " alt=" " width="30 " height="30 " class="d-inline-block align-text-center "> GeoTurismo
+        </a>
+    </div>
+</nav>
+
+<div class="container origen">
+    <form>
+
+        <div class="row">
+
+            <div class="col-2">
+                Origen
+                <br><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="custom-control-label" for="flexRadioDefault1">
+                  UADER Fcyt
+                </label>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="row">
+                    <div class="col-md-auto">
+                        <div class="custom-control custom-radio custom-control-inline ">
+                            <input class="custom-control-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="custom-control-label" for="flexRadioDefault2">
+                  Otro
+                  </label>
+                        </div>
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="input-group input-group-sm mb-3">
+                            <input name="latitud" type="text" class="form-control" placeholder="Latitud" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="latitud">
+                        </div>
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="input-group input-group-sm mb-3">
+                            <input name="latitud" type="text" class="form-control" placeholder="Longitud" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="longitud">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-auto radio">
+                Radio de alcance
+            </div>
+            <div class="col-md-auto">
+                <div class="col-md-auto">
+                    <div class="input-group input-group-sm mb-3">
+                        <input name="radio" type="text" class="form-control" placeholder="1 km" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="radio">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-auto">
+
+                <button type="button" class="btn btn-success btn-sm">Buscar</button>
+
+            </div>
+        </div>
+
+    </form>
+
+    <div class="container">
+        <div class="centrado">
+            <table class="table table-warning table-striped ">
+                <thead>
+                    <tr class="cabecera">
+                        <th scope="col">#</th>
+                        <th scope="col">Negocio</th>
+                        <th scope="col">Rubro</th>
+                        <th scope="col">Accion</th>
+                    </tr>
+                </thead>
+                <!-- <tbody>
+                    <tr *ngFor="let ticket of ticketsComprados" class="filas">
+                        <th scope="row">{{ticket[0]}}</th>
+                        <td>{{ticket[1]}}</td>
+                        <td>{{ticket[1]}}</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-secondary reservar" (click)="comprarTicketF(ticket[0])">Comprar</button>
+                        </td>
+                    </tr>
+
+                </tbody> -->
+            </table>
+        </div>
+
+    </div>
+
+
+
+</div>

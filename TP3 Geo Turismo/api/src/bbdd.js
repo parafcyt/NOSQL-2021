@@ -4,7 +4,8 @@ module.exports = () => {
 
     const client = redis.createClient(6379, 'redistp3');
 
-    client.on("error", () => {
+    client.on("error", (err) => {
+        console.log(err);
         process.exit();
     });
 

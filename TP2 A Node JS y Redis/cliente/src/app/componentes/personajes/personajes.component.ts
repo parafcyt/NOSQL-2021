@@ -13,7 +13,7 @@ import { ActivatedRoute } from "@angular/router";
 })
 export class PersonajesComponent implements OnInit {
 
-  episodio:String="";
+  episodio:string="";
   personajes :any;
   nombrePersonaje: string = "";
 

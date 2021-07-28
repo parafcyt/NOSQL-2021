@@ -59,8 +59,8 @@ exports.porRubroEnRadio = (req, res) => {
 
     //cargo en constantes los parametros que llegaron
     const rubro = req.body.rubro;
-    const lat = req.body.lat;
-    const lon = req.body.lon;
+    const lat = req.body.latitud;
+    const lon = req.body.longitud;
     const km = req.body.km;
 
 
@@ -91,8 +91,8 @@ exports.distANegocio = (req, res) => {
 
     //cargo en constantes los parametros que llegaron
     const rubro = req.body.rubro;
-    const lat = req.body.lat;
-    const lon = req.body.lon;
+    const lat = req.body.latitud;
+    const lon = req.body.longitud;
     const negocio = req.body.negocio;
 
 
