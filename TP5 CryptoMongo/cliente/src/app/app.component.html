@@ -1,0 +1,41 @@
+<nav class="navbar navbar-light " style="background-color: #fae25d; ">
+    <div class=" container-fluid ">
+        <a class="navbar-brand " href="# ">
+            <img src="../assets/bitcoin.png " alt=" " width="30 " height="30 " class="d-inline-block align-text-center "> CryptoMongo
+        </a>
+        <!-- <div class="container-fluid"> -->
+        <form class="d-flex me-auto">
+            <input class="form-control me-2" name="cryptomonedas" [(ngModel)]="limiteDocumentos" placeholder="Limite de cryptomonedas">
+            <button class="btn btn-outline-success" (click)="traerDeMongoF()">Cargar</button>
+        </form>
+        <!-- </div> -->
+
+    </div>
+</nav>
+
+<div class="container">
+    <div class="centrado">
+        <table class="table table-success table-striped ">
+            <thead>
+                <tr class="cabecera">
+                    <th scope="col">Rank</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio en USD</th>
+                    <th scope="col">Ultima actualizacion</th>
+                    <th scope="col">Fecha de salida</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let moneda of monedas; let i=index" class="filas">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{ moneda.name }}</td>
+                    <td>{{ moneda.quote.USD.price }}</td>
+                    <td>{{ moneda.last_updated | date: 'dd/MM/yyyy - HH:MM:SS'}}</td>
+                    <td>{{ moneda.date_added | date: 'dd/MM/yyyy - HH:MM:SS'}}</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
