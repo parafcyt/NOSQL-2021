@@ -53,7 +53,7 @@ def guardarEnBBDD(db: pymongo.database.Database, datos):
 
     # Nombre de la coleccion: cryptoColeccion
     #guardo de a un documento
-    db.cryptoColeccion.insert_one(datos)
+    db.cryptocolection.insert_one(datos)
 
 
 

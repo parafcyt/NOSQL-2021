@@ -21,7 +21,7 @@ def traerDeMongo(limiteDocumentos):
 
     respuestas = []
 
-    for dato in db.cryptoColeccion.find().limit(int(limiteDocumentos)):
+    for dato in db.cryptocolection.find().limit(int(limiteDocumentos)):
 
         dato.pop('_id') #elimino el id porque no puedo hacer el JSON con un objeto
         respuestas.append(dato)
