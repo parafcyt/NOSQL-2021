@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: black;">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/inicio">
+            <img src="../../../assets/avengers.png" alt="" width="40" height="40" class="d-inline-block align-text-center ">Avengers
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " routerLink="/agregar" routerLinkActive="active" *ngIf="auth.isAuthenticated$ | async">Agregar</a>
+                </li>
+
+            </ul>
+            <div class="d-flex">
+
+                <ng-container *ngIf="auth.isAuthenticated$ | async; else loggedOut">
+                    <button (click)="auth.logout()" class="btn btn-outline-danger">
+                        Log out
+                    </button>
+                </ng-container>
+
+                <ng-template #loggedOut>
+                    <button (click)="auth.loginWithRedirect()" class="btn btn-outline-success">
+                        Log in
+                    </button>
+                </ng-template>
+
+            </div>
+        </div>
+    </div>
+</nav>

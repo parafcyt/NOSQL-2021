@@ -1,0 +1,29 @@
+<div class="container">
+    <form [formGroup]="peliculaFormulario" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="titulo" class="form-label">Titulo</label>
+            <input type="text" class="form-control" id="titulo" formControlName="titulo">
+        </div>
+        <div class="mb-3">
+            <label for="frase" class="form-label">Frase</label>
+            <input type="text" class="form-control" id="frase" formControlName="frasePelicula">
+        </div>
+        <div class="mb-3">
+            <label for="website" class="form-label">Pagina Web</label>
+            <input type="text" class="form-control" id="website" formControlName="website">
+        </div>
+        <div class="mb-3">
+            <label for="fechaEstreno" class="form-label">Fecha de Estreno</label>
+            <input type="text" class="form-control" id="fechaEstreno" formControlName="fechaEstreno">
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button type="button" class="btn btn-outline-danger" routerLink="/inicio">Cancelar</button>
+            <button type="submit" [disabled]="!peliculaFormulario.valid" class="btn btn-outline-success">Guardar</button>
+
+        </div>
+
+    </form>
+
+
+
+</div>
