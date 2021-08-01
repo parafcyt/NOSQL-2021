@@ -1,0 +1,33 @@
+<div class="container">
+    <form [formGroup]="personajeFormulario" (ngSubmit)="modificarPersonajeF()">
+        <div class="mb-3">
+            <label for="hero" class="form-label">Nombre Superheroe</label>
+            <input type="hero" class="form-control" id="hero" formControlName="hero">
+        </div>
+        <div class="mb-3">
+            <label for="name" class="form-label">Nombre real</label>
+            <input type="text" class="form-control" id="name" formControlName="name">
+        </div>
+        <div class="mb-3">
+            <label for="img" class="form-label">Url Imagen</label>
+            <input type="text" class="form-control" id="img" formControlName="img">
+        </div>
+        <div class="mb-3">
+            <label for="historia" class="form-label">Historia</label>
+            <input type="text" class="form-control" id="historia" formControlName="historia">
+        </div>
+        <div class="mb-3">
+            <label for="peliculas" class="form-label">Peliculas donde aparece</label>
+            <input type="text" class="form-control" id="peliculas" formControlName="peliculas" placeholder="ej. pelicula 1,pelicula 2,..">
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button type="button" class="btn btn-outline-danger" routerLink="/personajes">Cancelar</button>
+            <button type="submit" [disabled]="!personajeFormulario.valid" class="btn btn-outline-success">Guardar</button>
+
+        </div>
+
+    </form>
+
+
+
+</div>

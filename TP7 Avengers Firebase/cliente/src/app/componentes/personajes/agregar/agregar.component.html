@@ -1,0 +1,33 @@
+<div class="container">
+    <form [formGroup]="personajeFormulario" (ngSubmit)="agregarPersonajeF()">
+        <div class="mb-3">
+            <label for="hero" class="form-label">Nombre Superheroe</label>
+            <input type="hero" class="form-control" id="hero" formControlName="hero">
+        </div>
+        <div class="mb-3">
+            <label for="name" class="form-label">Nombre real</label>
+            <input type="text" class="form-control" id="name" formControlName="name">
+        </div>
+        <div class="mb-3">
+            <label for="url" class="form-label">Url Imagen</label>
+            <input type="text" class="form-control" id="url" formControlName="url">
+        </div>
+        <div class="mb-3">
+            <label for="historia" class="form-label">Historia</label>
+            <input type="text" class="form-control" id="historia" formControlName="historia">
+        </div>
+        <div class="mb-3">
+            <label for="peliculasAparece" class="form-label">Peliculas donde aparece</label>
+            <input type="text" class="form-control" id="peliculasAparece" formControlName="peliculasAparece" placeholder="ej. pelicula 1,pelicula 2,..">
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button type="button" class="btn btn-outline-danger" routerLink="/personajes">Cancelar</button>
+            <button type="submit" [disabled]="!personajeFormulario.valid" class="btn btn-outline-success">Guardar</button>
+
+        </div>
+
+    </form>
+
+
+
+</div>

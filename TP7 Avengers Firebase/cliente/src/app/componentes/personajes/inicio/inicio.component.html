@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <button type="button" class="btn btn-lg btn-outline-primary" routerLink="/personajes/agregar" *ngIf="auth.isAuthenticated$ | async;">Nuevo</button>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Filtrar por pelicula donde aparece" [(ngModel)]="peliculaAFiltrar" (keyup)="filtrarPersonajes()">
+        </div>
+
+    </div>
+    <br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col" *ngFor="let personaje of personajes">
+            <div class="card h-100">
+                <img src={{personaje.img}} class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">{{personaje.hero}}</h5>
+                    <p><small class="text-muted">{{personaje.name}}</small></p>
+                    <div *ngIf="!personaje.expandido">
+                        <p class="card-text">{{personaje.historia.substring(0,50)}}...</p>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" type="button" (click)="personaje.expandido=!personaje.expandido">Ver más...</button>
+                        </div>
+                    </div>
+                    <div *ngIf="personaje.expandido">
+                        <p class="card-text">{{personaje.historia}}</p>
+                        <hr>
+                        <h6 class="card-text fw-bold">Peliculas donde aparece:</h6>
+
+                        <ul class="list-group">
+                            <li *ngFor="let pelicula of personaje.peliculas" class="list-group-item">{{pelicula}}</li>
+                        </ul>
+                        <br>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" type="button" (click)="personaje.expandido=!personaje.expandido">Ver menos...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end" *ngIf="auth.isAuthenticated$ | async;">
+                        <button type="button" class="btn btn-outline-primary" (click)="modificarPersonajeF(personaje)">Modificar</button>
+                        <button type="button" class="btn btn-outline-danger" (click)="eliminarPersonajeF(personaje)">Eliminar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

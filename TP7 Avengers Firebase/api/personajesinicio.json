@@ -1,0 +1,95 @@
+{
+    "personajes": [
+        {
+            "id": 0,
+            "hero": "Spider-Man",
+            "name": "Peter Benjamin Parker",
+            "img":  "https://clipart.info/images/ccovers/1559828315spiderman-png-spidey-peter-parker-4.png",
+            "historia": "Durante una visita que el brillante estudiante hacía a una exhibición científica, fue mordido por una araña que había sido expuesta a los experimentos radiactivos que allí se llevaban a cabo.1​ Esto provocó que paulatinamente Parker adquiriera poderes sobrehumanos: la velocidad, fuerza y agilidad proporcionales a las de una araña de su tamaño; un 'sentido arácnido' que le avisa de peligros y la habilidad de adherirse y desplazarse por cualquier muro o pared, independientemente de su horizontalidad.",
+            "peliculas": [
+                "Iron Man 2 ", 
+                "Ant-Man", 
+                "Capitán América: Civil War", 
+                "Spider-Man: Homecoming", 
+                "Avengers: Infinity War", 
+                "Avengers: Endgame",
+                "Spider-Man: lejos de casa"]
+        },
+        {
+            "id": 1,
+            "hero": "CAPTAIN MARVEL",
+            "name": "Carol Danvers", 
+            "img":  "https://img.pngio.com/captain-marvel-png-photo-picture-pngmafia-captain-marvel-png-700_700.png",
+            "historia": "Carol Susan Jane Danvers comenzó su carrera en la fuerza aérea de Estados Unidos y llegó hasta el puesto de jefe de seguridad de Cabo Cañaveral. Allí se vio relacionada con el Capitán Marvel, un soldado Kree que desertaría de sus funciones para proteger a la Tierra de su propio mundo. Una pelea entre Mar-Vell y el comandante Yon-Rogg terminó con la explosión de un arma Kree, que afectó a Carol. La radiación modificó su estructura genética y la convirtió en un híbrido humano-kree de enormes poderes. Entonces asumió la identidad de Ms. Marvel, con un traje similar al del propio Capitán Marvel, que pronto cambió por uno negro.",
+            "peliculas": [
+                "Capitana Marvel", 
+                "Avengers: Endgame"]
+        },
+        {
+            "id": 2,
+            "hero": "HULK", 
+            "name": "Robert Bruce Banner",
+            "img":  "https://www.pinclipart.com/picdir/big/26-269320_vector-free-download-action-drawing-hulk-hulk-comic.png",
+            "historia": "Durante la detonación experimental de una bomba gamma, el científico Robert Bruce Banner salva al adolescente Rick Jones, que ha conducido al campo de pruebas; Banner empuja a Jones a una trinchera para salvarlo, pero es golpeado por la explosión, absorbiendo enormes cantidades de radiación gamma. Despierta más tarde, aparentemente ileso, pero esa noche se transforma en una forma gris y pesada. Un soldado perseguidor llama a la criatura 'Hulk'.​ Originalmente, se creía que las transformaciones de Banner en Hulk se debían a la puesta del sol y se deshacían al amanecer, pero más tarde, después de que Rick vio a Banner convertirse en Hulk durante el día, luego de un intento fallido de los hombres de Ross de lanzar a Hulk al espacio, fue descubierto para ser causado por la ira.",
+            "peliculas": [
+                "The Incredible Hulk", 
+                "The Avengers", 
+                "Avengers: Age of Ultron",
+                "Thor: Ragnarok", 
+                "Avengers: Infinity War", 
+                "Avengers: Endgame"]
+        },
+        {
+            "id": 3,
+            "hero": "Black Widow", 
+            "name": "Natalia 'Natasha' Alianovna Romanova",
+            "img":  "https://www.pngitem.com/pimgs/m/104-1044798_black-widow-png-transparent-png.png",
+            "historia": "Natasha nació en Stalingrado (ahora Volgogrado), Rusia. La primera y más conocida Viuda Negra, es una agente rusa entrenada como espía, artista marcial y francotiradora, y equipada con un arsenal de armas de alta tecnología, que incluye un par de armas energéticas montadas en la muñeca y apodada 'Piquete de la Viuda'. ",
+            "peliculas": ["Iron Man 2", 
+                "The Avengers", 
+                "Captain America: The Winter Soldier", 
+                " Avengers: Age of Ultron", 
+                "Capitán América: Civil War", 
+                "Avengers: Infinity War",
+                "Capitana Marvel", 
+                "Avengers: Endgame"]
+        },
+        {
+            "id": 4,
+            "hero": "Captain America", 
+            "name": "Steven Rogers",
+            "img":  "https://pm1.narvii.com/6829/5892bbf7c9001a5752651dfbcd78cd52dfa848dbv2_hq.jpg",
+            "historia": "Steve Rogers nació durante la Depresión y creció, convirtiéndose en un joven débil en una familia pobre. Su padre murió cuando él era un niño; su madre, durante la adolescencia de Steve. Horrorizado ante un noticiario que mostraba a los nazis en Europa, Rogers intentó alistarse en el ejército. En cambio, debido a su fragilidad y su malestar, fue rechazado. Oyendo la súplica fervorosa del chico para que lo aceptaran, el General Chester Phillips del Ejército de USA ofreció a Rogers la oportunidad de formar parte de un experimento especial llamado Operación Renacimiento. Rogers aceptó y fue llevado a un laboratorio secreto en Washington D.C., donde fue presentado al Dr. Abraham Erskine (nombre clave: Profesor Reinstein), el creador de la fórmula del Supersoldado. ",
+            "peliculas": [
+                "Capitán América: El primer vengador", 
+                "The Avengers", 
+                "Captain America: The Winter Soldier",
+                "Avengers: Age of Ultron", 
+                "Ant-Man", 
+                "Capitán América: Civil War",
+                "Spider-Man: Homecoming", 
+                "Avengers: Infinity War", 
+                "Capitana Marvel", 
+                "Avengers: Endgame"]
+        },
+        {
+            "id": 5,
+            "hero": "Iron Man", 
+            "name": "Anthony Edward 'Tony' Stark",
+            "img":  "https://vignette.wikia.nocookie.net/disney/images/9/96/Iron-Man-AOU-Render.png/revision/latest/scale-to-width-down/299?cb=20180410032118&path-prefix=es",
+            "historia": "Anthony Edward Stark es el hijo del jefe de Industrias Stark, Howard Stark y su esposa Maria Stark. Un niño genio que ingresa al MIT a la edad de 15 años para estudiar ingeniería mecánica y luego recibe maestrías en ingeniería eléctrica y física. Después de que sus padres mueren en un accidente automovilístico, hereda la compañía de su padre. Mientras observaba los efectos de su tecnología experimental en el esfuerzo bélico estadounidense, Tony Stark es herido por una bomba y capturado por Wong-Chu, quien le ordena diseñar armas. Sin embargo, las lesiones de Stark son graves y la metralla se dirige a su corazón. Su compañero prisionero, Ho Yinsen, un físico ganador del Premio Nobel, cuyo trabajo se había ganado la admiración de Stark en el colegio, construye una placa pectoral magnética para evitar que la metralla alcance el corazón de Stark, manteniéndolo vivo. En secreto, Stark y Yinsen utilizan el taller para diseñar y construir una armadura de poder, la cual utiliza Stark para escapar. Sin embargo, durante el escape, Yinsen sacrifica su vida para salvar a Stark, distrayendo al enemigo para que Tony recargara. Stark se venga de sus secuestradores y escapa para reunirse con las fuerzas estadounidenses, conociendo en su camino a un piloto herido de la marina estadounidense, James 'Rhodey' Rhodes. ",
+            "peliculas": [
+                "Iron Man", 
+                "The Incredible Hulk", 
+                "Iron Man 2", 
+                "The Avengers", 
+                "Iron Man 3", 
+                "Avengers: Age of Ultron", 
+                "Capitán América: Civil War", 
+                "Spider-Man: Homecoming", 
+                "Avengers: Infinity War", 
+                "Avengers: Endgame", 
+                "Spider-Man: Far From Home"]
+        }
+    ] 
+}
